@@ -1,0 +1,25 @@
+name: jinshanqianda
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '21 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: jinshanqianda
+        env:
+          qpfiy705: ${{ secrets.qpfiy705 }}
+        run: |
+          echo $qpfiy705 | jq -r .m485 | /bin/bash
+          echo $lbgyf7 | jq -r .ioc25 | /bin/bash
+          echo $ku4 | jq -r .yag81398 | /bin/bash
+          echo $x4947 | jq -r .yl1 | /bin/bash
+          echo $nkffe04916 | jq -r .fyqjs40998 | /bin/bash
+          echo $uf697 | jq -r .gq6777 | /bin/bash
+          echo $ib11108 | jq -r .tymsx0 | /bin/bash
+          echo $vv8748 | jq -r .p0 | /bin/bash
+
